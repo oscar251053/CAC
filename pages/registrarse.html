@@ -1,0 +1,82 @@
+<!--esta etiqueta significa que está en html5-->
+<html lang="es">
+    <head> <!--Etiqueta para el navegador-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CAC Movie | Catálogo de películas</title>
+        <!--es lo que se ve en la pestaña-->
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <!--es el link externo a detalles en css-->
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav>
+                <a href="../index.html"> <!--para que vuelva a la página principal-->
+                    <img src="../assets/img/movies_movie_oscar_themedia_1735.png" 
+                    <span>CAC-Movies</span> <!--escribe en el navegador-->
+                </a>
+            </nav>
+        </header>
+        <main id="main">
+            <section class="contenedorRegistrarse">
+                <div> <form action="" method="get" class="separar">
+                    <h1>Registro</h1>
+                    <div class="separar">
+                        <input type="text" placeholder="Nombre"  id="nombre" name="nombre">
+                        
+                    </div>
+                    <div class="separar">
+                        <input type="text" placeholder="Apellido"  id="apellido" name="apellido">
+                        
+                    </div>
+                    <div class="separar">
+                        <input type="email" placeholder="Email"  id="email" name="email">
+                        
+                    </div>
+                    <div class="separar" >
+                        <input type="password" placeholder="Contraseña"  id="password" name="password">
+                        
+                    </div>
+                    <div class="separar">
+                        <input type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)"  id="fechaNacimiento" name="fechaNacimiento">
+                        
+                    </div>
+                    <div class="separar">
+                        <select name="pais" id="pais">
+                            <option value="">País</option>
+                            <option value="AR">Argentina</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BR">Brasil</option>
+                            <option value="CH">Chile</option>
+                            <option value="CO">Colombia</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="VE">Venezuela</option>
+                        </select>
+                     
+                    </div>
+                    <div class="terminos">
+                        <input class="check" type="checkbox" id="terminos">
+                        <label class="textoCheck" for="terminos">Acepto términos y condiciones</label>
+                        
+                    </div>
+                    <div>
+                        <input class="boton" type="submit" value="Registrarse">
+                    </div>
+                    <div>
+                        <a class="ayuda" href="#">Necesitas ayuda?</a>
+                    </div>
+                </form></div>
+                
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+
+        
+    </body>
+</html>
