@@ -35,7 +35,6 @@ footer{
         padding-left: 40px;
     }
 }
-
 .header{
     height: 10vh;
     position:sticky;
@@ -95,6 +94,14 @@ estilos seccion principal
         }
     }
 }
+.peliculasTendencias2{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+    h2{
+        margin-bottom:20px;
+    }
+}
 .peliculasTendencias{
     width: 80%;
     margin:0 auto;
@@ -103,7 +110,8 @@ estilos seccion principal
         margin-top:50px;
         margin-bottom:20px;
     }
-    .galeriaTendencias{
+}
+.galeriaTendencias{
         display:flex;
         justify-content: space-evenly;
         gap: 20px;
@@ -125,12 +133,11 @@ estilos seccion principal
     button{
        margin-bottom:20px;
     }
-}
+
 /*estilos de section peliculas aclamadas*/
 .peliculasAclamadas{
     width: 80%;
     margin:0 auto;
-    margin-bottom: 20px;
     text-align: center;
     h2{
         margin-top:50px;
@@ -167,7 +174,7 @@ estilos seccion principal
     text-align: center;
     display: inline-block;
     width: fit-content;
-    background-color: #1270eb;
+    transform: translate(0,-100px);
 }
 
 .buscando{
@@ -175,6 +182,7 @@ estilos seccion principal
     display: flex;
     display: block;
     text-align: center;
+    height: 80px;
 }
 .contenedorRegistrarse{
     display: flex;
