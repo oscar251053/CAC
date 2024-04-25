@@ -29,7 +29,7 @@ a{
     text-decoration: none;
 }
 footer{
-    background-image: linear-gradient(to right, #2e9f4c, #2ab247, #29c53e, #2ed830, #38eb12);
+    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
     li{
         padding-top: 20px;
         padding-left: 40px;
@@ -41,7 +41,7 @@ footer{
     top:0; 
     z-index: 10; 
     nav{
-        background-image: linear-gradient(to right, #2e9f4c, #2ab247, #29c53e, #2ed830, #38eb12);
+        background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
         height: 100%;
         display:flex;
         align-items: center;
@@ -65,7 +65,7 @@ footer{
 }
 .header1{
     height: 10vh;
-    background-image: linear-gradient(to right, #2e9f4c, #2ab247, #29c53e, #2ed830, #38eb12);
+    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
 }
 /*main
 estilos seccion principal
@@ -175,7 +175,8 @@ estilos seccion principal
     display: inline-block;
 }
 .textoDetalle{
-    background-color: aqua;
+    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+
     text-align: center;
     display: inline-block;
     width: fit-content;
@@ -183,7 +184,8 @@ estilos seccion principal
 }
 
 .buscando{
-    background-color: #29c53e;
+    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+
     display: flex;
     display: block;
     text-align: center;
@@ -235,6 +237,7 @@ estilos seccion principal
     .header1{
        display: inline-block;
        width: 100%;
-       background-image: linear-gradient(to right, #2e9f4c, #2ab247, #29c53e, #2ed830, #38eb12);
+       background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+
        
 }
