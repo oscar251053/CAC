@@ -12,11 +12,15 @@ main{
 }
 h1{
     font-family: "Roboto", sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 700;
     font-style: normal;
     margin-bottom: 20px;
-   
+    padding-top: 5vh;
+}
+h2{
+    font-family: "Roboto", sans-serif;
+    font-size: 2.1rem;
 }
 ul{
     list-style: none;
@@ -24,7 +28,13 @@ ul{
 a{
     text-decoration: none;
 }
-/*estilos del header*/
+footer{
+    background-image: linear-gradient(to right, #2e9f4c, #2ab247, #29c53e, #2ed830, #38eb12);
+    li{
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+}
 
 .header{
     height: 10vh;
@@ -149,18 +159,61 @@ estilos seccion principal
         }
     }
 }
+.imgDetalle{
+    width: fit-content;
+    display: inline-block;
+}
+.textoDetalle{
+    text-align: center;
+    display: inline-block;
+    width: fit-content;
+    background-color: #1270eb;
+}
+
+.buscando{
+    background-color: #29c53e;
+    display: flex;
+    display: block;
+    text-align: center;
+}
 .contenedorRegistrarse{
     display: flex;
     height: 90vh;
     justify-items: center;
-    margin-left: 85vb;;
     display: block;
+    width: 40vb;
+    justify-items: center;
+    margin-left: 40%;
 }
 .separar{
     background-position: center;
     background-size: cover;
+    margin-left: 2vb;
     width: 30vb;
     align-items: center; 
-    margin-top: 5vh;
+    margin-bottom: 5vh;
     text-align: center;
+}
+@media screen and (width <= 1000px)
+{
+    h1{
+       font-size: 2.5rem;   
+    }
+    .header{
+        height: initial;
+        nav{
+            flex-direction: column;
+        }
+
+        }
+
+
+    .textoDetalle{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
 }
