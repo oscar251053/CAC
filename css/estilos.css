@@ -134,8 +134,13 @@ estilos seccion principal
             }
         }
     }
-    button{
-       margin-bottom:20px;
+    button {
+        padding: 10px 20px;
+        background-color: #49aa1cea;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
     }
 
 /*estilos de section peliculas aclamadas*/
@@ -180,7 +185,6 @@ estilos seccion principal
     width: fit-content;
     transform: translate(0,-100px);
 }
-
 .buscando{
     background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
 
@@ -189,23 +193,43 @@ estilos seccion principal
     text-align: center;
     height: 80px;
 }
-.separar{
-    background-position: center;
-    background-size: cover;
-    margin-left: 2vb;
-    width: 30vb;
-    align-items: center; 
-    margin-bottom: 5vh;
+.contenedorInicioSesion{
     text-align: center;
+}
+.separar1{
+    margin-top: 5vh;
+}
+.separar{
+     margin-bottom: 15vh;
+}
+.separar2{
+    margin-top: 2vh;
 }
 .contenedorRegistrarse{
     display: flex;
     height: 90vh;
-    justify-items: center;
-    display: block;
-    width: fit-content;
     margin-left: 40%;
+    text-align: center;
 }
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+select[type="text"],
+input {
+    width: 200px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
 
 @media screen and (width <= 1000px)
 {
