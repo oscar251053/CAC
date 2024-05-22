@@ -70,6 +70,31 @@ footer{
 /*main
 estilos seccion principal
 */
+.seccionTitulos{
+    height: 90vh;
+    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/clima.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    .contenedorClima{
+        color: beige;
+        text-align: center;
+        
+        p{
+            margin-top: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color:var(--main-color);
+            font-size: 2rem;
+            border:2px solid var(--main-color);
+            border-radius: 5px;
+            padding:10px 20px;
+        }
+    }  
+}
 .sectionTitulos{
     height: 90vh;
     background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/img1/television-5017870_640.jpg");
