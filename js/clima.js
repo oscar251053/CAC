@@ -32,5 +32,13 @@ async function updateWeatherCard(city) {
     document.getElementById("humidity").textContent = weatherData.main.humidity;
     // Actualizar el elemento HTML con la velocidad del viento
     document.getElementById("windSpeed").textContent = weatherData.wind.speed;
+    // Obtener el código del icono del clima
+    const iconCode = weatherData.weather[0].icon;
+    // Construir la URL del icono del clima
+    const iconUrl = `https://openweathermap.org/img/w/${iconCode}.png`;
+    // Actualizar el elemento HTML con el ícono del clima
+    document.getElementById("weatherIcon").src = iconUrl;
+    // Establecer el atributo "alt" del ícono del clima con la descripción del clima
+    document.getElementById("weatherIcon").alt = weatherData.weather[0].description;
 }
 updateWeatherCard("Buenos Aires");

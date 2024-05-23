@@ -77,20 +77,15 @@ estilos seccion principal
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     .contenedorClima{
         color: beige;
-        text-align: center;
+        text-align: left;
         
-        p{
-            margin-top: 20px;
-            display: inline-block;
-            text-decoration: none;
-            color:var(--main-color);
-            font-size: 2rem;
-            border:2px solid var(--main-color);
-            border-radius: 5px;
+       p{
+            margin-top: 5px;
+            font-size: 1.5rem;
             padding:10px 20px;
         }
     }  
@@ -252,8 +247,6 @@ input {
     border: 2px solid #ccc;
     border-radius: 5px;
 }
-
-
 
 
 @media screen and (width <= 1000px)
