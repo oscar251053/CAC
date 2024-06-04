@@ -4,7 +4,7 @@
             // Crear elementos de la tarjeta de película
             // creamos la columna de bootstrap 
             const card = document.createElement('div');
-            card.classList.add('col-12','col-md-3', 'pelicula-card');
+            card.classList.add('col-12','col-md-3', 'pelicula-card', 'mb-5');
             // estamos creando la tarjeta
             const cardInner = document.createElement('div');
             cardInner.classList.add('card');
@@ -21,15 +21,15 @@
             const cardBody = document.createElement('div');
             cardBody.classList.add('card-body');
 
-            const cardTitle = document.createElement('h5');
+            /*const cardTitle = document.createElement('h5');
             cardTitle.classList.add('card-title');
             cardTitle.textContent = pelicula.title;
 
-             // Añadir elementos a la tarjeta de película
-            //cardBody.appendChild(cardTitle);
+            Añadir elementos a la tarjeta de película
+            cardBody.appendChild(cardTitle);*/
             cardInner.appendChild(cardImg);
-            cardInner.appendChild(cardBody);
-            // agrego la tarejta a la columna de bootstrap
+            //cardInner.appendChild(cardBody);
+            // agrego la tarjeta a la columna de bootstrap
             card.appendChild(cardInner);
 
             return card;
