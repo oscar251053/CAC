@@ -72,7 +72,7 @@
             displayErrorMessage("fechaError", "Por favor complete el campo.");
             isValid = false;
         }
-        if (pais === "") {
+        if (value === "") {
             displayErrorMessage("paisError", "Por favor complete el campo.");
             isValid = false;
         }

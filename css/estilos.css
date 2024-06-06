@@ -29,10 +29,10 @@ a{
     text-decoration: none;
 }
 footer{
-    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
-    li{
+    background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
+    
         padding-top: 20px;
-        padding-left: 40px;
+        padding-bottom: 20px;
     }
 }
 .flex{
@@ -50,7 +50,7 @@ footer{
     top:0; 
     z-index: 10; 
     nav{
-        background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+        background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
         height: 100%;
         display:flex;
         align-items: center;
@@ -74,7 +74,7 @@ footer{
 }
 .header1{
     height: 10vh;
-    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+    background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
 }
 /*main
 estilos seccion principal
@@ -165,7 +165,7 @@ estilos seccion principal
     }
     button {
         padding: 10px 20px;
-        background-color: #49aa1cea;
+        background-color: #1c82aaea;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -215,7 +215,7 @@ estilos seccion principal
     transform: translate(0,-100px);
 }
 .buscando{
-    background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+    background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
 
     display: flex;
     display: block;
@@ -286,7 +286,7 @@ input {
     .header1{
        display: inline-block;
        width: 100%;
-       background-image: linear-gradient(to right, #e05372, #d36740, #ae7f1f, #7d922a, #389d57);
+       background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
     }
        
 }

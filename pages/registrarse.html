@@ -24,12 +24,17 @@
     </head>
     <body>
         <header class="header1">
-            <nav>
-                <a href="../index.html"> <!--para que vuelva a la página principal-->
-                    <img src="../assets/img/movies_movie_oscar_themedia_1735.png">
-                    <span>CAC-Movies</span> <!--escribe en el navegador-->
-                </a>
-            </nav>
+            <header class="header">
+                <header class="header">
+                    <nav>
+                        <!--para que vuelva a la página principal-->
+                        <a href="../index.html"> 
+                            <img src="../assets/img/movies_movie_oscar_themedia_1735.png">
+                            <span>CAC-Movies</span> <!--escribe en el navegador-->
+                        </a>
+                    </nav>
+                </header>
+        </header>
         </header>
         <main id="main">
             <section class="contenedorRegistrarse">
@@ -57,11 +62,13 @@
                         </div>
                         <div class="form-group">
                             <label for="date" class="form-label">Fecha de nacimiento</label>
-                            <input type="date" id="fechaNacimiento" name="fechaNacimiento">    
+                            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+                            <div id="fechaError" class="error-message"></div>  
                         </div>
                         <div class="form-group">
                             <label for="pais" class="form-label">País de origen</label>
                             <select type="text" name="pais" id="pais">
+                                <div id="paisError" class="error-message"></div>
                             <option 
                                 value="">
                             </option>
