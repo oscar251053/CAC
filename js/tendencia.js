@@ -49,11 +49,11 @@
             try{
                 // Realizamos una petición fetch a la API para obtener las películas populares
                 const response = await fetch(`${API_SERVER}/movie/popular?page=${page}`, options);
-                console.log(response);
+                //console.log(response);
                 const data = await response.json(); // Convertimos la respuesta a JSON
-                console.log(data);
+                //console.log(data);
                 const movies = data.results;// Extraemos las películas de la respuesta, array de objetos de peliculas
-                console.log(movies);
+                //console.log(movies);
                 const peliculasSection = document.getElementById('peliculasSection');
                 peliculasSection.innerHTML = '';// Limpiamos el contenido previo del contenedor
                 movies.forEach(movie => {

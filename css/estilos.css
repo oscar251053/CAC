@@ -47,7 +47,7 @@ footer{
             }
         }
     }
-}
+
 .flex{
     display: flex;
     justify-content: center;
@@ -98,13 +98,13 @@ li{list-style: none;}
         padding-right: 15px;}
 }
 .contenedor {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, 0.75rem);
-    padding-left: var(--bs-gutter-x, 0.75rem);
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 150px;
-}
+                width: 100%;
+                padding-right: var(--bs-gutter-x, 0.75rem);
+                padding-left: var(--bs-gutter-x, 0.75rem);
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 150px;
+            }
 .centrar {
     position: relative;
     left: 30px;
@@ -138,7 +138,7 @@ estilos seccion principal
 */
 .sectionTitulos{
     height: 90vh;
-    background:linear-gradient(to bottom, #000000a3, #000000a3),url("../assets/img/img1/television-5017870_640.jpg");
+    background:url("../assets/img/img1/television-5017870_640.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -146,11 +146,8 @@ estilos seccion principal
     justify-content: left;
     align-items: center;
     .contenedorTitulos{
-        color: beige;
+        color: black
         text-align: center;
-        /*efecto blur a un contenedor
-        backdrop-filter: blur(
-            10px);*/
         width: 35%;
         a{
             margin-top: 20px;
@@ -164,81 +161,148 @@ estilos seccion principal
         }
     }
 }
-.peliculasTendencias2{
-    width: 80%;
-    margin:0 auto;
+
+.peliculasTendencia{
+    background-color: #051c2744;
+    width:100%;
+    margin: 0 auto;
     text-align: center;
-    h2{
-        margin-bottom:20px;
+    margin-top: 10px;
+    .tituloSection{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
     }
-}
-.peliculasTendencias{
-    width: 80%;
-    margin:0 auto;
-    text-align: center;
-    h2{
-        margin-top:50px;
-        margin-bottom:20px;
-    }
-}
-.galeriaTendencias{
-        display:flex;
-        justify-content: space-evenly;
-        gap: 20px;
+    .peliculas{
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
-        margin-bottom: 20px;
-        div{
-            width: 250px;
-            height: 350px;
-            box-shadow: 10px 10px 47px -6px rgba(255,255,255,0.42);
-            border-radius: 5px;
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                border-radius: 5px;
+        gap:60px;
+        a{
+            text-decoration: none;
+            color: #ffffff;
+            .pelicula{
+                width:200px;
+                height: 300px;
+                position: relative;
+                overflow: hidden;
+                border-radius: 10px;
+                transition: all 0.5s ease;
+               
+                .imgTendencia{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                   
+                }
+              
+                .tituloPelicula{
+                    z-index: 2;
+                    position: absolute;
+                    text-align: center;
+                    top: 50%;
+                    left: 50%;
+                    max-width: 20rem;
+                    width: 100%;
+                    transform: translateY(-50%) translateX(-50%);
+                    h4 {
+                        font-size: 1.6rem;
+                        font-weight: bold;
+                        opacity: 0;
+                        margin-bottom: 0.5rem;
+                        letter-spacing: 0.1rem;
+                        transition: opacity 0.5s ease-in-out;
+
+                    }
+                }
+                &:hover{
+                   box-shadow: 0 0 30px #9f3648cd;
+                   transform: scale(0.9);
+                  
+                }
+                &:hover .tituloPelicula{
+                    width: 100%;
+                    height: 100%;
+                    backdrop-filter: blur(20px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                &:hover h4 {
+                    width: 100%;
+                    padding: 0.5rem;
+                    opacity: 1;
+                }
+             
             }
         }
+      
     }
-    button {
-        padding: 10px 20px;
-        background-color: #1c82aaea;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-/*estilos de section peliculas aclamadas*/
-.peliculasAclamadas{
-    width: 80%;
-    margin:0 auto;
-    text-align: center;
-    h2{
+    .boton{
+        border: 1px solid white;
+        box-sizing: content-box;
         margin-top:50px;
-        margin-bottom:20px;
+        margin-left:20px;
+        background-color: #1c82aaea;
+        color: #ffffff;
+        padding: 1rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 500;
+        text-decoration: none;
+        margin-bottom:60px;
+         /* Agregar efecto de botón presionado */
+         transition: transform 0.3s, box-shadow 0.3s;
+         &:hover {
+             background-color: #9f3647;
+             transform: scale(0.95);
+             box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+         }
+
     }
-    .galeriaAclamadas{
+}
+.peliculasAclamadas{
+    background-color: #051c2744;
+    width:100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    .tituloSection{
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    .aclamadas{
         overflow-x: scroll;
         overflow-y: hidden;
         width: 100%;
         display: flex;
         justify-content: flex-start;
-        align-items: start;
-        column-gap: 30px;
-        div{
-            width: 220px;
-            height: 350px;
-            flex-shrink: 0;
-            box-shadow: 10px 10px 47px -45px rgba(255,255,255,0.29);
+        align-items: flex-start;
+        padding: 0px 0px 40px 0px;
+        .peliculaItem{
+            border-radius: 25px;
+            width: 170px;
+            min-width: 170px;
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
            
-            img{
-                width: 100%;
-                height: 100%;
+            .imgAclamada{
+                border-radius: 5%;
+                width: 95%;
+                height: 95%;
                 object-fit: cover;
-                border-radius: 5px;
             }
+            
         }
+       
+    
     }
 }
 .imgDetalle{
@@ -252,8 +316,7 @@ estilos seccion principal
     transform: translate(0,-100px);
 }
 .buscando{
-    background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
-
+    background-color: #534d4db9;
     display: flex;
     display: block;
     text-align: center;
@@ -276,7 +339,7 @@ estilos seccion principal
     height: 90vh;
     
     }
-}
+
 .form-group {
     margin-bottom: 20px;
 }
