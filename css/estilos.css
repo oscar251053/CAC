@@ -146,7 +146,7 @@ estilos seccion principal
     justify-content: left;
     align-items: center;
     .contenedorTitulos{
-        color: black
+        color: black;
         text-align: center;
         width: 35%;
         a{
