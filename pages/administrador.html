@@ -33,11 +33,11 @@
         <h1 class="text-center pt-5 mb-5 fs-1">Gestión de películas</h1>
         <div class="container-md text-center">
             <div class="row justify-content-evenly">
-                <div class="col-3">
+                <div class="col-7">
                     <label class="form-label">Título</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control mb-3">
                 </div>
-                <div class="col-3">
+                <div class="col-1">
                     <label class="form-label">Lanzamiento</label>
                     <input class="form-control">
                 </div>
@@ -45,7 +45,7 @@
                     <label class="form-label">Género</label>
                     <input class="form-control">
                 </div>
-                <div class="col-3">
+                <div class="col-1">
                     <label class="form-label">Duración</label>
                     <input class="form-control">
                 </div>
@@ -55,19 +55,23 @@
                 </div>
                 <div class="col-9">
                     <label class="form-label">Reparto</label>
-                    <input class="form-control">
+                    <input class="form-control mb-3">
                 </div>
                 <div class="col-12 img-fluid">
                     <label class="form-label">Sinopsis</label>
-                    <input class="form-control">
+                    <input class="form-control mb-3">
                 </div>
                 
             </div>
         </div>
         <div class="col-4 offset-md-1">
             <label class="form-label ml-20">Imagen</label>
-            <input class="form-control">
-        </div>
+            <input class="form-control img-fluid"  type="file" id="formFile">
+        
+        <!--<div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control offset-md-1" type="file" id="formFile">
+          </div></div>-->
         <button type="submit" class="btn btn-primary mt-md-5 offset-md-1 my-md-5 row-cols-auto">Agregar película</button>
     </section>
         <hr>
