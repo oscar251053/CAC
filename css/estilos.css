@@ -308,6 +308,12 @@ estilos seccion principal
 .imgDetalle{
     width: fit-content;
     display: inline-block;
+    height: 90vh;
+}
+.imgDetalle2{
+    width:fit-content;
+    display: inline-block;
+    height: 90vh;
 }
 .textoDetalle{
     text-align: center;
@@ -387,4 +393,17 @@ input {
        background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
     }
        
+}
+hr{
+    border: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+}
+.tabla {
+    width: 80%;
+    color: #212529;
+    background-color: #75adb6;
+  }
+.tam {
+    size: 10px;
 }
