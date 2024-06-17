@@ -38,7 +38,7 @@
                     <input type="text" class="form-control mb-3">
                 </div>
                 <div class="col-1">
-                    <label class="form-label">Lanzamiento</label>
+                    <label class="form-label">Se lanzó</label>
                     <input class="form-control">
                 </div>
                 <div class="col-3">
@@ -46,11 +46,11 @@
                     <input class="form-control">
                 </div>
                 <div class="col-1">
-                    <label class="form-label">Duración</label>
+                    <label class="form-label">Dura</label>
                     <input class="form-control">
                 </div>
                 <div class="col-3">
-                    <label class="form-label">Director</label>
+                    <label class="form-label">Dirige</label>
                     <input class="form-control">
                 </div>
                 <div class="col-9">
@@ -68,10 +68,6 @@
             <label class="form-label ml-20">Imagen</label>
             <input class="form-control img-fluid"  type="file" id="formFile">
         
-        <!--<div class="mb-3">
-            <label for="formFile" class="form-label">Default file input example</label>
-            <input class="form-control offset-md-1" type="file" id="formFile">
-          </div></div>-->
         <button type="submit" class="btn btn-primary mt-md-5 offset-md-1 my-md-5 row-cols-auto">Agregar película</button>
     </section>
         <hr>
@@ -87,7 +83,7 @@
                     <th scope="col">Acciones</th>
                   </tr>
                 </thead>
-                <tbody class="table-group-divider text-white text-center">
+                <tbody class="table-group-divider text-white text-center table-responsive {-sm | -md} ">
                   <tr scope="row">
                     <td>Duna</td>
                     <td>Ciencia Ficción, Aventura</td>
@@ -98,8 +94,8 @@
                         </td>
                     <td>
                         
-                        <button type="submit" class="btn btn-primary">Modificar</button>
-                        <button type="submit" class="btn btn-primary">Eliminar</button>
+                        <button type="submit" class="boton">Modificar</button>
+                        <button type="submit" class="boton">Eliminar</button>
                     
                     </td>
                   </tr>
@@ -116,7 +112,8 @@
         <a class="btn btn-primary" href="#" role="button">Términos y condiciones</a>
             <button class="btn btn-primary" type="submit">Preguntas frecuentes</button>
             <button class="btn btn-primary" type="button">Ayuda</button>
-            <li><a href="administrador.html">Administrador</a></li>
+            <li>
+                <a href="administrador.html">Administrador</a></li>
       
           
         <a href="../index.html" text-end>
