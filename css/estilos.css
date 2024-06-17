@@ -327,6 +327,10 @@ estilos seccion principal
     width: fit-content;
     transform: translate(0,-100px);
 }
+.buscando{
+    text-align: center;
+    h2{justify-content: center;}
+}
 .buscadorPeliculas{
     display: flex;
     justify-content: center;
@@ -415,15 +419,24 @@ hr{
     size: 10px;
 }
 
-@media screen and (width <= 1000px) and (width > 950px)
+@media screen and (width <= 1000px)
 {
     h1{
        font-size: 2.5rem;   
     }
+    
     .header{
         height: initial;
         nav{
             flex-direction: column;
+            ul{
+                list-style: none;
+                
+                a{
+                    font-size:1.2rem;
+                }
+               
+            }
         }
 
         }
@@ -434,39 +447,6 @@ hr{
         h2{
             font-size: 2rem;
         }
-    }
-    .header1{
-       display: inline-block;
-       width: 100%;
-       background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
-    }
-       
-}
-@media screen and (width <= 950px)
-{
-    h1{
-       font-size: 2.5rem;   
-    }
-    .header{
-        height: initial;
-        nav{
-            flex-direction: column;
-            ul{font-size: 2rem;}
-        }
-
-        }
-    .textoDetalle{
-        h1{
-            font-size: 2.5rem;
-        }
-        h2{
-            font-size: 2rem;
-        }
-    }
-    .header1{
-       display: inline-block;
-       width: 100%;
-       background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
     }
        
 }
