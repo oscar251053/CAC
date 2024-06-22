@@ -161,7 +161,18 @@ estilos seccion principal
         }
     }
 }
-
+.error-message {
+    color: rgb(164, 13, 13);
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.error{
+    border: 1px solid red;
+}
+.sinError{
+    border: 1px solid green;
+}
 .peliculasTendencia{
     background-color: #051c2744;
     width:100%;
