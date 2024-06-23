@@ -86,17 +86,7 @@ footer{
     }
 }
 li{list-style: none;}
-.header1{
-    height: 10vh;
-    background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
-    nav{
-        background-image: linear-gradient(to right, #0a4776, #006797, #0088b6, #00abd2, #12cfeb);
-        height: 100%;
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-right: 15px;}
-}
+
 .contenedor {
                 width: 100%;
                 padding-right: var(--bs-gutter-x, 0.75rem);
