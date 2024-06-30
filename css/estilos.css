@@ -412,9 +412,10 @@ hr{
     margin: 0 auto;
 }
 .tabla {
-    width: 80%;
+    width: 100%;
     color: #212529;
     background-color: #75adb6;
+    text-align: center;
   }
 .tam {
     size: 10px;
