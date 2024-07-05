@@ -9,9 +9,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 row.innerHTML = `
                     <td>${pelicula.idPelicula}</td>
                     <td>${pelicula.titulo}</td>
+                    <td>${pelicula.director}</td>
+                    <td>${pelicula.elenco}</td>
+                    <td>${pelicula.sinopsis}</td>
+                    <td>${pelicula.duracion}</td>
                     <td>${pelicula.genero}</td>
-                    <td><img src="../imagenes/imagenes${pelicula.idPelicula}.jpg" alt="Imagen de ${pelicula.title}"" alt="Imagen de ${pelicula.title}" width = "100px"></td>
-                    <td class="d-grid gap-2 col-6 mx-auto ">
+                    <td><img src="../assets/img/imagenes${pelicula.idPelicula}.jpg" class="img-fluid img-thumbnail" alt="Imagen de ${pelicula.title}"" alt="Imagen de ${pelicula.title}" width = "100px"></td>
+                    
+                    <td class="d-grid gap-2">
                         <button class="btn btn-primary"  onclick="editarPelicula(${pelicula.editarPelicula})">Modificar</button>
                         <button class="btn btn-primary"  onclick="borrarPelicula(${pelicula.idPelicula})">Eliminar</button>
                     </td>

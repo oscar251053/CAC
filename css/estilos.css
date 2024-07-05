@@ -264,7 +264,7 @@ estilos seccion principal
              box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
          }
 
-        }
+    }
 
 .peliculasAclamadas{
     background-color: #051c2744;
@@ -369,6 +369,7 @@ estilos seccion principal
          }
     }
 }
+
 .contenedorInicioSesion{
     text-align: center;
 }
@@ -389,6 +390,9 @@ estilos seccion principal
 
 .form-group {
     margin-bottom: 20px;
+}
+.form-control{
+ height: auto;   
 }
 .terminos {
     display:inline-flex;
@@ -411,12 +415,56 @@ hr{
     width: 80%;
     margin: 0 auto;
 }
+
 .tabla {
-    width: 100%;
+    width: 98%;
     color: #212529;
     background-color: #75adb6;
     text-align: center;
+   
+    border-collapse: collapse;
+    table-layout: fixed;
   }
+
+.col-id {
+    width: 1%;
+}
+
+.col-title {
+    width: 9%;
+}
+
+.col-director {
+    width: 5%;
+}
+
+.col-cast {
+    width: 10%;
+}
+
+.col-synopsis {
+    width: 20%;
+}
+
+.col-duration {
+    width: 9%;
+}
+
+.col-genre {
+    width: 10%;
+}
+
+.col-images {
+    width: 10%;
+}
+
+.col-actions {
+    width: 10%;
+}
+.color_encabezado{
+    background-color: #4282a0;
+}
+
 .tam {
     size: 10px;
 }
@@ -466,4 +514,7 @@ hr{
             
         }
     }
+    table, thead, tbody, th, td, tr {
+        display: block;}
+    
 }
