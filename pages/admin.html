@@ -34,35 +34,35 @@
             <div class="row justify-content-center">
                 <div class="col-6">
                     <label class="form-label">Título</label>
-                    <input id="titulo" type="text" class="form-control mb-3">
+                    <input class="form-control" type="text" id="titulo">
                 </div>
                 <div class="col-2">
                     <label class="form-label">Lanzada</label>
-                    <input class="form-control" id="fechaDeEstreno">
+                    <input class="form-control" type="text" id="fechaDeEstreno">
                 </div>
                 <div class="col-2">
                     <label class="form-label">Género</label>
-                    <input class="form-control" id="genero">
+                    <input class="form-control" type="text" id="genero">
                 </div>
                 <div class="col-2">
                     <label class="form-label">Dura</label>
-                    <input class="form-control" id="duracion">
+                    <input class="form-control" type="text" id="duracion">
                 </div>
                 <div class="col-3">
                     <label class="form-label">Dirige</label>
-                    <input class="form-control" id="director">
+                    <input class="form-control" type="text" id="director">
                 </div>
                 <div class="col-9">
                     <label class="form-label">Reparto</label>
-                    <input class="form-control mb-3" id="elenco">
+                    <input class="form-control" type="text" id="elenco">
                 </div>
                 <div class="col-12 img-fluid">
                     <label class="form-label">Sinopsis</label>
-                    <input class="form-control mb-3" id="sinopsis">
+                    <input class="form-control" type="text" id="sinopsis">
                 </div>
                 <div class="col-1">
                     <label class="form-label">Clasificada</label>
-                    <input class="form-control mb-3" id="clasicacion">
+                    <input class="form-control" type="text" id="clasicacion">
                 </div>
                 <div class="col-7">
                     <label class="form-label">Imagen</label>
@@ -79,45 +79,52 @@
         <hr>
         <section class="overflow-x-auto">
             <h1 class="text-center pt-5 mb-5 fs-1">Listado de películas</h1>
-           <div class="row justify-content-center">
-            <table class=" table tabla">
-                <thead class="color_encabezado">
-                  <tr class="text-center">
-                    <th class="col-id" scope="col">ID</th>
-                    <th class="col-title" scope="col">Título</th>
-                    <th class="col-director" scope="col">Director</th>
-                    <th class="col-cast" scope="col">Elenco</th>
-                    <th class="col-synopsis" scope="col">Sinopsis</th>
-                    <th class="col-duration" scope="col">Duración</th>
-                    <th class="col-genre" scope="col">Género</th>
-                    <th class="col-images" scope="col">Imagenes</th>
-                    <th class="col-actions" scope="col">Acciones</th>
-                  </tr>
-                </thead>
-                <tbody id="tabla-cuerpo">
-                    <!-- Aquí se insertarán las filas de películas -->
-                </tbody>
-                
-              </table>
-           </div> 
+           <form class="row justify-content-center">
+                <table class=" table tabla">
+                    <thead class="color_encabezado">
+                        <tr class="text-center">
+                            <th class="col-id" scope="col">ID</th>
+                            <th class="col-title" scope="col">Título</th>
+                            <th class="col-director" scope="col">Director</th>
+                            <th class="col-cast" scope="col">Elenco</th>
+                            <th class="col-synopsis" scope="col">Sinopsis</th>
+                            <th class="col-duration" scope="col">Duración</th>
+                            <th class="col-genre" scope="col">Género</th>
+                            <th class="col-images" scope="col">Imagenes</th>
+                            <th class="col-actions" scope="col">Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-cuerpo">
+                        <!-- Aquí se insertarán las filas de películas -->
+                    </tbody>
+                    
+                </table>
+            </form> 
         </section>
     </main>
     <script src="../js/bootstrap.bundle.min.js"></script>
                 <script src="../js/script.js"></script>
-        <script>
+                <script src="../js/agregar.js"></script>
+       <!-- <script>
+            // cuando el dom se cargue
+document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('datos_peliculas').addEventListener('submit', async function(event) {
     event.preventDefault();
     
     const form = event.target;
-    const formData = new FormData();
+    const formData = new FormData('datos_peliculas');
     
-    formData.append('titulo', form.title.value);
-    formData.append('director', form.duration.value);
-    formData.append('elenco', form.director.value);
-    formData.append('duracion', form.cast.value);
-    formData.append('sinopsis', form.releaseDate.value);
-    formData.append('fechaDeEstreno', form.plot.value);
-    formData.append('imagen', form.poster.files[0]);
+    formData.append('titulo', form.titulo.value);
+    formData.append('director', form.director.value);
+    formData.append('elenco', form.elenco.value);
+    formData.append('duracion', form.duracion.value);
+    formData.append('sinopsis', form.sinopsis.value);
+    formData.append('fechaDeEstreno', form.fechaDeEstreno.value);
+    formData.append('imagen', form.imagen.files[0]);
+    if (titulo === '' || director==='' ||elenco===''|| genero === '' || duracion === '' ||sinopsis===''||fechaDeEstreno===''|| imagen === '') {
+            alert('Todos los campos son obligatorios');
+            return;
+        }
 
     try {
         const response = await fetch('http://localhost:8080/apisimple/peliculas', {
@@ -135,8 +142,8 @@
         console.error('Error al enviar la película:', error);
     }
 });
-
-        </script>
+})
+        </script>-->
 </body>
 <footer>
     <nav class="d-flex justify-content-evenly width: 30px" >

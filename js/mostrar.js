@@ -7,14 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
             data.forEach(pelicula => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
-                    <td>${pelicula.idPelicula}</td>
+                  
                     <td>${pelicula.titulo}</td>
-                    <td>${pelicula.director}</td>
-                    <td>${pelicula.elenco}</td>
-                    <td>${pelicula.sinopsis}</td>
                     <td>${pelicula.duracion}</td>
                     <td>${pelicula.genero}</td>
-                    <td><img src="../assets/img/imagenes${pelicula.idPelicula}.jpg" class="img-fluid img-thumbnail" alt="Imagen de ${pelicula.title}"" alt="Imagen de ${pelicula.title}" width = "100px"></td>
+                    <td><img src="../assets/img/${pelicula.imagen}" class="img-fluid img-thumbnail" alt="Imagen de ${pelicula.title}"" alt="Imagen de ${pelicula.title}" width = "150px"></td>
                     
                     <td class="d-grid gap-2">
                         <button class="btn btn-primary"  onclick="editarPelicula(${pelicula.editarPelicula})">Modificar</button>

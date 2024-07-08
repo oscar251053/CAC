@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>CAC Movies | Catálogo de películas</title>
+        <!--es lo que se ve en la pestaña-->
+        <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <!--es el link externo a detalles en css-->
+        <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <!--para que vuelva a la página principal-->
+            <a href="../index.html"> 
+                <img src="../assets/img/movies_movie_oscar_themedia_1735.png" width="50">
+                <span>CAC-Movies</span> <!--escribe en el navegador-->
+            </a>
+            <ul>
+                <li><a class="linkNav" href="../index.html#tendencias">Tendencias</a></li>
+                <li><a href="registrarse.html">Registrarse</a></li>
+                <li><a href="iniciodesesion.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main id="mainDetalle" class="mainDetalle">
+        <section class="container mt-4 mb-5">
+            <h1>Gestión de peliculas</h1>
+            <!-- Formulario para dar de alta una pelicula nueva-->
+
+            <form id="formNuevaPelicula" action="" method="post" enctype="multipart/form-data" class="row row-cols-lg-auto g-3 align-items-center">
+                <div class="col-6">
+                    <label class="form-label">Título</label>
+                    <input class="form-control" type="text" name="titulo" id="titulo">
+                </div>
+                <div class="col-1">
+                    <label class="form-label">Lanzada</label>
+                    <input class="form-control" type="text" name="fechaDeEstreno" id="fechaDeEstreno">
+                </div>
+                <div class="col-4">
+                    <label class="form-label">Género</label>
+                    <input class="form-control" type="text" name="genero" id="genero">
+                </div>
+                <div class="col-1">
+                    <label class="form-label">Dura</label>
+                    <input class="form-control" type="text" name="duracion" id="duracion">
+                </div>
+                <div class="col-3">
+                    <label class="form-label">Dirige</label>
+                    <input class="form-control" type="text" name="director" id="director">
+                </div>
+                <div class="col-9">
+                    <label class="form-label">Reparto</label>
+                    <input class="form-control" type="text" name="elenco" id="elenco">
+                </div>
+                <div class="col-12 img-fluid">
+                    <label class="form-label">Sinopsis</label>
+                    <input class="form-control" type="text" name="sinopsis" id="sinopsis">
+                </div>
+                <div class="col-1">
+                    <label class="form-label">Clasificada</label>
+                    <input class="form-control" type="text" name="clasificacion" id="clasificacion">
+                </div>
+                <div class="col-7">
+                    <label class="form-label">Imagen</label>
+                    <input class="form-control" type="file" id="imagen" name="imagen" accept="image/*">
+                </div>
+                <div class="col-4">
+                    <input class="btn btn-success btn-primary boton" type="submit" value="Agregar Pelicula">
+                </div>
+            </form>
+        </section>
+        <hr>
+        <!--aca se van a mostrar las peliculas y las acciones modificar y dar de baja-->
+        <section class="container mt-5 mb-5 overflow-auto">
+            <h2>Listado de Peliculas</h2>
+            <p class="small">Para ver todos los datos de las peliculas, elija una y toque modificar</p>
+            <form class="row justify-content-center">
+                <table class=" table tabla" id="tablePeliculas">
+                <thead class="color_encabezado">
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Duracion</th>
+                        <th>Genero</th>
+                        <th>Imagen</th>
+                        <th class="col-actions" scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-cuerpo">
+                    <!--este es solo un ejemplo porque se va a llenar desde js
+                    <tr>
+                        <td>The Super Mario Bros. Movie (2023)</td>
+                        <td>3h 22m</td>
+                        <td>Animation, Family, Adventure, Fantasy, Comedy</td>
+                        <td><img width="150px" src="../assets/img/mario.jpg" alt="mario pelicula 2023"></td>
+                        
+                    </tr>-->
+                </tbody>
+                </table>
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <nav class="d-flex justify-content-evenly width: 30px" >
+            <a class="btn btn-primary" href="#" role="button">Términos y condiciones</a>
+                <button class="btn btn-primary" type="submit">Preguntas frecuentes</button>
+                <button class="btn btn-primary" type="button">Ayuda</button>
+                <li><a href="administrador2.html">Administrador</a></li>
+          
+              
+            <a href="../index.html" text-end>
+            <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
+            </a>
+        </nav>
+    </footer>
+    <!--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>-->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <!--<script src="../js/get_peliculas.js"></script>
+    <script src="../js/post_pelicula.js"></script>-->
+    <script src="../js/mostrar.js"></script>
+    <script src="../js/agregar.js"></script>
+
+</body>
+</html>
