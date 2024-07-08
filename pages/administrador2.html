@@ -74,29 +74,23 @@
         </section>
         <hr>
         <!--aca se van a mostrar las peliculas y las acciones modificar y dar de baja-->
-        <section class="container mt-5 mb-5 overflow-auto">
+        <section class="container mt-5 mb-5 overflow-auto ancho-tabla">
             <h2>Listado de Peliculas</h2>
-            <p class="small">Para ver todos los datos de las peliculas, elija una y toque modificar</p>
             <form class="row justify-content-center">
                 <table class=" table tabla" id="tablePeliculas">
                 <thead class="color_encabezado">
                     <tr>
-                        <th>Titulo</th>
-                        <th>Duracion</th>
-                        <th>Genero</th>
-                        <th>Imagen</th>
+                        <th class="col-title">Titulo</th>
+                        <th class="col-synopsis">Sinopsis</th>
+                        <th class="col-cast">Elenco</th>
+                        <th class="col-duration">Duracion</th>
+                        <th class="col-genre">Genero</th>
+                        <th class="col-images">Imagen</th>
                         <th class="col-actions" scope="col">Acciones</th>
                     </tr>
                 </thead>
                 <tbody id="tabla-cuerpo">
-                    <!--este es solo un ejemplo porque se va a llenar desde js
-                    <tr>
-                        <td>The Super Mario Bros. Movie (2023)</td>
-                        <td>3h 22m</td>
-                        <td>Animation, Family, Adventure, Fantasy, Comedy</td>
-                        <td><img width="150px" src="../assets/img/mario.jpg" alt="mario pelicula 2023"></td>
-                        
-                    </tr>-->
+                   
                 </tbody>
                 </table>
             </form>
@@ -109,20 +103,13 @@
                 <button class="btn btn-primary" type="submit">Preguntas frecuentes</button>
                 <button class="btn btn-primary" type="button">Ayuda</button>
                 <li><a href="administrador2.html">Administrador</a></li>
-          
-              
             <a href="../index.html" text-end>
             <img src="../assets/img/flecha-hacia-arriba.png" alt="ir arriba flecha">
             </a>
         </nav>
     </footer>
-    <!--<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-    AOS.init();
-    </script>-->
+   
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <!--<script src="../js/get_peliculas.js"></script>
-    <script src="../js/post_pelicula.js"></script>-->
     <script src="../js/mostrar.js"></script>
     <script src="../js/agregar.js"></script>
 

@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const data = await response.json();
         //si la respuesta es correcta, muestro un mensaje de exito y limpio los inputs del formulario
         // si el codigo es 201, la pelicula se agrego correctamente
-        if (response.status === 201) {
+        if (response.status === 200) {
             alert('Pelicula agregada correctamente');
             formNuevaPelicula.reset();
             // que se recargue la pagina para ver la pelicula agregada
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             alert('Error al agregar la pelicula');
         }
     }catch(error){
-        console.log(error + "error")
+        
        }
     });
 

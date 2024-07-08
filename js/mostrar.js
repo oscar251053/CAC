@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 row.innerHTML = `
                   
                     <td>${pelicula.titulo}</td>
+                    <td>${pelicula.sinopsis}</td>
+                     <td>${pelicula.elenco}</td>
                     <td>${pelicula.duracion}</td>
                     <td>${pelicula.genero}</td>
                     <td><img src="../assets/img/${pelicula.imagen}" class="img-fluid img-thumbnail" alt="Imagen de ${pelicula.title}"" alt="Imagen de ${pelicula.title}" width = "150px"></td>
